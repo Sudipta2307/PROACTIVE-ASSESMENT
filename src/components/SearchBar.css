@@ -1,0 +1,143 @@
+.search-bar-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 1415px;
+  min-height: 620px;
+}
+
+
+.image-carousel-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  z-index: -1; 
+  overflow: hidden;
+}
+
+.image-carousel {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+
+.image-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 45%;
+  overflow: hidden;
+}
+
+
+.scroll-down img,
+.scroll-up img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  animation: scroll-medium 8s linear infinite;
+}
+
+.scroll-up img {
+  animation-direction: reverse;
+}
+
+
+@keyframes scroll-medium {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+
+.search-bar-content {
+  position: relative;
+  width: 50%;
+  text-align: left;
+  margin-left: auto; 
+  padding-right: 30px;
+}
+
+.search-bar-header {
+  margin-bottom: 20px;
+  text-align: left; 
+}
+
+.search-bar-header h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+  line-height: 1.2;
+  position: relative; 
+  left: 100px;
+}
+
+.search-bar-header h1 span {
+  color: #4facfe; 
+  font-weight: bold;
+}
+
+.search-bar-header p {
+  font-size: 1.5rem;
+  color: #aaa; 
+  margin-top: 10px;
+  position: relative; 
+  left: 100px;
+}
+
+
+.search-bar {
+  display: flex; 
+  flex-wrap: nowrap; 
+  gap: 10px; 
+  justify-content: flex-start; 
+  align-items: center; 
+  margin-top: 30px; 
+  position: relative; 
+  left: 100px; 
+  width: 1020px; 
+  height: 60px; 
+  background: #f8f9fa; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.search-bar input,
+.search-bar select,
+.search-bar button {
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+.search-bar input,
+.search-bar select {
+  flex: 1; 
+  padding: 10px;
+  font-size: 1.2rem;
+  height: 100%; 
+  box-sizing: border-box; 
+}
+
+.search-bar button {
+  background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
+  min-width: 120px; 
+  height: 100%; 
+  border-radius: 0px;
+}
+
+.search-bar button:hover {
+  background: linear-gradient(90deg, #4facfe 0%, #0090e6 100%);
+}

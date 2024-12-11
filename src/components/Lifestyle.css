@@ -1,0 +1,149 @@
+.lifestyle {
+  padding: 30px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.gradient-strip {
+  position: relative;
+  bottom: 0;  
+  left: 0;
+  width: 101.4%;
+  height: 30px;  /* Adjust the height of the strip */
+  background: linear-gradient(45deg, #F0C971, #E5688C); /* Adjust the gradient */
+  transform: skewY(-5deg);  
+}
+
+.lifestyle h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #A9A9A9;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.lifestyle p {
+  font-size: 22px;
+  color: #ff6a3d;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.tab-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.tab-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  padding: 10px 0;
+  scrollbar-width: none;
+}
+
+.tab-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.tab {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 2px solid transparent;
+  border-radius: 50px;
+  background-color: #f0f0f0;
+  color: #555;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.tab.active {
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+.tab:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.scroll-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-button.left {
+  left: -20px;
+}
+
+.scroll-button.right {
+  right: -20px;
+}
+
+.scroll-button:hover {
+  background-color: white;
+}
+
+.arrow-icon {
+  font-size: 20px;
+  font-weight: bold;
+  color: #555;
+}
+
+.pillar-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.pillar {
+  max-width: 300px;
+  flex: 1;
+  text-align: center;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pillar:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.pillar img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.pillar h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.pillar p {
+  font-size: 16px;
+  color: #555;
+}
+
+.pillar.highlighted {
+  border: 2px solid #000;
+}
