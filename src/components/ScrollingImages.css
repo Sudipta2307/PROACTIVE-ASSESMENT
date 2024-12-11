@@ -24,11 +24,11 @@
   }
   
   .scrolling-image {
-    width: 100px; /* Adjust width */
+    width: 100px; 
     height: auto;
   }
   
-  /* Keyframes for scrolling */
+  
   @keyframes scroll {
     0% {
       transform: translateY(-100%);
