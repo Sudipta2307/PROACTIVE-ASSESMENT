@@ -3,7 +3,7 @@
     justify-content: center;
     gap: 20px;
     overflow: hidden;
-    height: 400px; /* Adjust height */
+    height: 400px; 
     position: relative;
   }
   
@@ -16,11 +16,11 @@
   }
   
   .column-1 {
-    animation-direction: normal; /* Scroll top to bottom */
+    animation-direction: normal; 
   }
   
   .column-2 {
-    animation-direction: reverse; /* Scroll bottom to top */
+    animation-direction: reverse; 
   }
   
   .scrolling-image {
