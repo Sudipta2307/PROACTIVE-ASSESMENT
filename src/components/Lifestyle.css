@@ -10,8 +10,8 @@
   bottom: 0;  
   left: 0;
   width: 101.4%;
-  height: 30px;  /* Adjust the height of the strip */
-  background: linear-gradient(45deg, #F0C971, #E5688C); /* Adjust the gradient */
+  height: 30px;  
+  background: linear-gradient(45deg, #F0C971, #E5688C); 
   transform: skewY(-5deg);  
 }
 
